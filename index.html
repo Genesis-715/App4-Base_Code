@@ -102,5 +102,23 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- First question typed between <p> brackets to show up on page-->
 <script>//onclick focuses attention on when button is clicked and does command written (allergy count variable)--></script>
 <!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:allergy No:cold)-->	
+
+<div class="page" id="two">
+<!-- div class sections off to second question; content following is on second page-->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Do you have a fever?</p>
+		<a href="#three" onclick="coldAdd();" class="w3-btn w3-purple">Yes</a> 
+		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-purple">No</a>
+	</div>
+</div>	
+<!-- Second question typed between <p> brackets to show up on page-->
+<script>//onclick focuses attention on when button is clicked and does command written (cold count variable)--></script>
+<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:cold No:allergy)-->
+
+
 </body>
 </html>
