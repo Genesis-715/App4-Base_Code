@@ -117,7 +117,7 @@ function getResult() {
 </head>
 <body>
 
-    <!-- Your image tag with the specified style -->
+    <!-- image tag with the specified style -->
     <img src="https://acc.vn/en/wp-content/uploads/sites/8/2021/05/headaches-2.jpg" alt="Headache pain">
 
 </body>
@@ -129,6 +129,7 @@ function getResult() {
 <!-- "class=" indicates button; "w3-__" indicates feature of button (shape, color, and size)-->
 <!-- words following the button descriptions shows what is on the button-->
 
+<!-- FIRST QUESTION PAGE -->
 <div class="page" id="one">
 <!-- div class sections off to first question; content following is on first page-->
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -137,14 +138,17 @@ function getResult() {
 	
     	<div id="content" class="w3-container">
         <p>Do you typically experience throbbing or pulsating pain on one side of your head?</p> 
+		<!-- Yes and No buttons with corresponding onclick events -->
 		<a href="#two" onclick="migraineAdd();" class="w3-btn w3-purple">Yes</a> 
 		<a href="#two" onclick="sinusAdd();" class="w3-btn w3-purple">No</a>
     	</div>
 </div>
 <!-- First question typed between <p> brackets to show up on page-->
-<script>//onclick focuses attention on when button is clicked and does command written (allergy count variable)--></script>
-<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:allergy No:cold)-->	
+<script>//onclick focuses attention on when button is clicked and does command written (migraine count variable)--></script>
+<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:migraine No:sinus)-->	
 
+
+<!-- SECOND QUESTION PAGE -->
 <div class="page" id="two">
 <!-- div class sections off to second question; content following is on second page-->
 	<div class="w3-container w3-flat-carrot">
@@ -153,14 +157,17 @@ function getResult() {
 	
 	<div id="content" class="w3-container">
 	<p>Is the pain concentrated around your forehead, cheekbones, and the bridge of your nose?</p>
+		<!-- Yes and No buttons with corresponding onclick events -->
 		<a href="#three" onclick="sinusAdd();" class="w3-btn w3-purple">Yes</a> 
 		<a href="#three" onclick="migraineAdd();" class="w3-btn w3-purple">No</a>
 	</div>
 </div>	
 <!-- Second question typed between <p> brackets to show up on page-->
-<script>//onclick focuses attention on when button is clicked and does command written (cold count variable)--></script>
-<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:cold No:allergy)-->
+<script>//onclick focuses attention on when button is clicked and does command written (sinus count variable)--></script>
+<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:sinus No:migraine)-->
 
+
+<!-- THIRD QUESTION PAGE -->
 <div class="page" id="three">
 <!-- div class sections off to third question; content following is on page-->
 	<div class="w3-container w3-flat-carrot">
@@ -169,14 +176,17 @@ function getResult() {
 	
 	<div id="content" class="w3-container">
 	<p>Are you sensitive to light or sound during a headache?</p>
+		<!-- Yes and No buttons with corresponding onclick events -->
 		<a href="#four" onclick="migraineAdd();" class="w3-btn w3-purple">Yes</a> 
 		<a href="#four" onclick="sinusAdd();" class="w3-btn w3-purple">No</a>
 	</div>
 </div>	
 <!-- Third question typed between <p> brackets to show up on page-->
-<script>//onclick focuses attention on when button is clicked and does command written (cold count variable)--></script>
-<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:cold No:allergy)-->
+<script>//onclick focuses attention on when button is clicked and does command written (migraine count variable)--></script>
+<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:migraine No:sinus)-->
 
+
+<!-- FOURTH QUESTION PAGE -->
 <div class="page" id="four">
 <!-- div class sections off to fourth question; content following is on page-->
 	<div class="w3-container w3-flat-carrot">
@@ -185,14 +195,17 @@ function getResult() {
 	
 	<div id="content" class="w3-container">
 	<p>Do your headaches coincide with changes in weather or seasonal allergies?</p>
+		<!-- Yes and No buttons with corresponding onclick events -->
 		<a href="#results" onclick="sinusAdd();" class="w3-btn w3-purple">Yes</a> 
 		<a href="#results" onclick="migraineAdd();" class="w3-btn w3-purple">No</a>
 	</div>
 </div>	
 <!-- Fourth question typed between <p> brackets to show up on page-->
-<<script>// onclick focuses attention on when button is clicked and does command written (allergy count variable)--></script>
-<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:allergy No:cold)-->
+<<script>// onclick focuses attention on when button is clicked and does command written (sinus count variable)--></script>
+<!-- two lines made for two diff buttons: yes and no; each corresponds to diff disease (Yes:sinus No:migraine)-->
 
+
+<!-- RESULTS PAGE -->
 <div class="page" id="results">
 <!-- div class sections off to last page ("results" page); content following is on page-->
 
@@ -207,6 +220,7 @@ function getResult() {
 	
 	
 	<div id="content" class="w3-container">
+		<!-- Button to show results when clicked -->
 		<button onclick="getResult();"> Results </button>
 		<p id="results"></p>
 	</div>
