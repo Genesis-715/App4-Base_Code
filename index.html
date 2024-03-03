@@ -41,18 +41,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
 
 	//sets variables = 0
-        var allergy_count = 0;
-        var cold_count = 0;
+        var migraine_count = 0;
+        var sinus_count = 0;
 
 	//this function adds 1 to the allergy count whenever the function is called to 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-        }//end of allergyAdd
+        function migraineAdd(){
+            migraine_count = migraine_count + 1;
+        }//end of migraineAdd
 	
 	//this function adds 1 to the cold count whenever the function is called to 
-        function coldAdd(){
-            cold_count = cold_count + 1;
-	}//end of coldAdd
+        function sinusAdd(){
+            sinus_count = sinus_count + 1;
+	}//end of sinusAdd
 
 function getResult() {
     		var allergyPercent = (allergy_count/6)*100; //divides the allergy count by the total number of questons asked (6) and converts to percentage.
