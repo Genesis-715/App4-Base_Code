@@ -55,10 +55,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	}//end of sinusAdd
 
 function getResult() {
-    		var allergyPercent = (allergy_count/6)*100; //divides the allergy count by the total number of questons asked (6) and converts to percentage.
-    		var coldPercent = (cold_count/6)*100; //divides the cold count by the total number of questons asked (6) and converts to percentage
+    		var migrainePercent = (migraine_count/4)*100; //divides the allergy count by the total number of questons asked (6) and converts to percentage.
+    		var sinusPercent = (sinus_count/4)*100; //divides the cold count by the total number of questons asked (6) and converts to percentage
     		var resultText = document.getElementById("results");
-    resultText.innerHTML = "Percentage it is allergies =" + allergyPercent + "<br> Percentage it is a cold =" + coldPercent;
+    resultText.innerHTML = "Percentage it is migraine =" + migrainePercent + "<br> Percentage it is a sinus =" + sinusPercent;
         }
 
 </script>	
